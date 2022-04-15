@@ -1,29 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import axios from 'axios';
 import About from './pages/About';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Fiche from './pages/Fiche';
 
 const App = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get('logements.json')
-      .then((res) => setData(res.data))
-      .catch((error) => console.log(error));
-  }, []);
-
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home logements={data} />} />
-        <Route path="/Fiche/:id" element={<Fiche logements={data} />} />
-        <Route path="/About" element={<About />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Fiche/:id" element={<Fiche />} />
+          <Route path="/About" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
 };

@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Habitations from '../components/Habitations';
-import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Footer from '../components/Footer';
 
-const Home = ({ logements }) => {
+const Home = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('logements.json')
+      .then((res) => setData(res.data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <div>
-      <Header />
       <Banner />
-      <Habitations element={logements} />
-      <Footer />
+      <Habitations element={data} />
     </div>
   );
 };
