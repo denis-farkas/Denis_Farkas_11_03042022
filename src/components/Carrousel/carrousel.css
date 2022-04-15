@@ -44,3 +44,14 @@
 .slide.active {
   opacity: 1;
 }
+
+.counter {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  top: 90%;
+  right: 620px;
+  z-index: 10;
+}

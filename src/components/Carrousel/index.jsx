@@ -5,7 +5,7 @@ import arrow_forward from '../../assets/images/arrow_forward.png';
 
 const Carrousel = ({ element }) => {
   const totalPictures = element.pictures.length;
-  console.log(totalPictures);
+
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -34,8 +34,10 @@ const Carrousel = ({ element }) => {
         alt="forward"
         onClick={nextSlide}
       />
+      <span className="counter">
+        {current + 1}/{totalPictures}
+      </span>
       {element.pictures.map((slide, index) => {
-        console.log(element.pictures);
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}

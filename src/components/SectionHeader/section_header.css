@@ -1,0 +1,47 @@
+.transformed {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-bottom: 1em;
+}
+
+.badge {
+  width: auto;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  color: white;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+.portrait {
+  display: flex;
+  justify-content: end;
+  margin-top: 3rem;
+}
+
+img.rond {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: right;
+  margin-top: 3.5rem;
+}
