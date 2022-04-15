@@ -1,0 +1,30 @@
+.nav-item.active {
+  color: #ff6060;
+  text-decoration: underline;
+}
+
+.navbar.bg-light {
+  border: none;
+  font-size: 24px;
+}
+
+@media (max-width: 820px) {
+  .navbar.bg-light {
+    margin-top: 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar.bg-light {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+}

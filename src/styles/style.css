@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  color: #ff6060;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-fluid {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  color: #ff6060;
+  text-decoration: none;
+  padding-right: 4.3rem;
+}
+
+a:hover {
+  color: #ff6060;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin: 0;
+}
+
+.row > * {
+  padding: 0 0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: 80%;
+  }
+
+  a {
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 70%;
+  }
+
+  a {
+    padding-right: 0.8rem;
+  }
+}
