@@ -7,9 +7,10 @@ const StarRating = ({ element }) => {
 
   return (
     <div className="star-rating">
-      {[...Array(activeStars)].map((star) => {
+      {[...Array(activeStars)].map((star, index) => {
         return (
           <svg
+            key={index + 5}
             width="36"
             height="36"
             viewBox="0 0 36 36"
@@ -23,9 +24,10 @@ const StarRating = ({ element }) => {
           </svg>
         );
       })}
-      {[...Array(inactiveStars)].map((star) => {
+      {[...Array(inactiveStars)].map((star, index) => {
         return (
           <svg
+            key={index + 10}
             width="36"
             height="36"
             viewBox="0 0 36 36"

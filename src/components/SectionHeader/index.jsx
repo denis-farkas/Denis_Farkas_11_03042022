@@ -10,8 +10,12 @@ const SectionHeader = ({ element }) => {
           <div className="col-lg-9">
             <h1 className="transformed">{element.title}</h1>
             <p className="location">{element.location}</p>
-            {element.tags.map((item) => {
-              return <div className="badge">{item}</div>;
+            {element.tags.map((item, index) => {
+              return (
+                <div key={index + 1} className="badge">
+                  {item}
+                </div>
+              );
             })}
           </div>
           <div className="col-lg-3">

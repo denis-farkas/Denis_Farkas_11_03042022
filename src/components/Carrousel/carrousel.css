@@ -55,3 +55,32 @@
   right: 620px;
   z-index: 10;
 }
+
+@media (max-width: 912px) {
+  .slider {
+    height: 255px;
+    width: 335px;
+  }
+
+  .counter {
+    display: none;
+  }
+
+  .slide-item {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .right_arrow {
+    width: 11.67px;
+    height: 19.8px;
+    top: 47%;
+  }
+
+  .left_arrow {
+    width: 11.67px;
+    height: 19.8px;
+    top: 47%;
+  }
+}
