@@ -41,7 +41,6 @@ img.rond {
 .name {
   display: flex;
   flex-wrap: wrap;
-
   text-align: right;
   margin-top: 3.5rem;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import StarRating from '../StarRating';
 import './section_header.css';
 
 const SectionHeader = ({ element }) => {
@@ -25,7 +26,9 @@ const SectionHeader = ({ element }) => {
                 />
               </div>
             </div>
-            <div className="stars"></div>
+            <div className="star-rating">
+              <StarRating element={element} />
+            </div>
           </div>
         </div>
       </div>
