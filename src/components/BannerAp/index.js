@@ -6,7 +6,6 @@ const BannerAp = () => {
     <div className="container">
       <div className="banner_ap">
         <div className="overlay overlay-secondary has-bg-img w-100"></div>
-        <div className="overlay-content"></div>
       </div>
     </div>
   );

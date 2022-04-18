@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.button-collapse.infos {
+button.infos {
   width: 1023px;
   height: 47px;
   font-size: 24px;
