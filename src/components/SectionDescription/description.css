@@ -14,6 +14,7 @@
   border-radius: 10px;
   text-align: left;
   padding-left: 1rem;
+  font-size: 18px;
 }
 
 .button-collapse::after {
@@ -34,6 +35,7 @@
   margin-top: -1.5rem;
   margin-bottom: 2rem;
   transition: none;
+  font-size: 18px;
 }
 
 .collapsing {

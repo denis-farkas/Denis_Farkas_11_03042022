@@ -1,11 +1,13 @@
 .logo img {
-  width: 210.32px;
+  width: 13.145rem;
   height: auto;
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 540px) {
   .logo img {
-    width: 145px;
+    width: 12rem;
     height: auto;
+    padding-left: 0.5rem;
   }
 }

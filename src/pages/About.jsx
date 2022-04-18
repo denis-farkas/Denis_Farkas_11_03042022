@@ -1,11 +1,12 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+import BannerAp from '../components/BannerAp';
+import Infos from '../components/Infos';
 
 const About = () => {
   return (
     <div>
-      <Navigation />
-      <h1>about</h1>
+      <BannerAp />
+      <Infos />
     </div>
   );
 };
