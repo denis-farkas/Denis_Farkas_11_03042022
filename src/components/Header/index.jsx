@@ -7,7 +7,7 @@ import './header.css';
 const Header = () => {
   return (
     <div className="page-header">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col">
             <Logo />

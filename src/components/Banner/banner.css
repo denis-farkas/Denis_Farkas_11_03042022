@@ -91,3 +91,10 @@
     border-radius: 10px;
   }
 }
+
+@media (max-width: 375px) {
+  .overlay-content {
+    font-size: 19px;
+    font-weight: 500;
+  }
+}

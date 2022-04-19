@@ -1,4 +1,16 @@
 .star-rating {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   text-align: right;
+}
+
+@media (max-width: 820px) {
+  svg {
+    width: 5%;
+    height: auto;
+  }
+
+  .star-rating {
+    margin-top: -2rem;
+    text-align: left;
+  }
 }

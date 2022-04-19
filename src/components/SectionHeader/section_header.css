@@ -28,8 +28,14 @@
 
 .portrait {
   display: flex;
-  justify-content: end;
-  margin-top: 3rem;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  margin-top: 3.5rem;
+  align-items: center;
+  justify-content: right;
 }
 
 img.rond {
@@ -38,9 +44,25 @@ img.rond {
   border-radius: 50%;
 }
 
-.name {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: right;
-  margin-top: 3.5rem;
+.identity {
+  max-width: 80px;
+  text-align: end;
+  margin-right: 10px;
+}
+
+@media (max-width: 820px) {
+  .badge {
+    width: auto;
+    height: 18px;
+    font-size: 12px;
+    padding-top: 3px;
+  }
+
+  .transformed {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+  }
 }

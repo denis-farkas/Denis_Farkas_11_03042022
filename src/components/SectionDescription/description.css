@@ -56,3 +56,24 @@
   padding-left: 1rem;
   padding-inline-start: 0px;
 }
+
+@media (max-width: 820px) {
+  .button-collapse {
+    width: 335px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  .collapse {
+    width: 335px;
+    height: auto;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  .carret img {
+    width: 15px;
+    height: 8px;
+  }
+}

@@ -4,10 +4,10 @@ import './section_header.css';
 
 const SectionHeader = ({ element }) => {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="section_header">
         <div className="row">
-          <div className="col-lg-9">
+          <div className="col-lg-9 col-md-12 col-sm-12">
             <h1 className="transformed">{element.title}</h1>
             <p className="location">{element.location}</p>
             {element.tags.map((item, index) => {
@@ -18,19 +18,16 @@ const SectionHeader = ({ element }) => {
               );
             })}
           </div>
-          <div className="col-lg-3">
-            <div className="row">
-              <div className="col-lg-5"></div>
-              <div className="name col-lg-4">{element.host.name}</div>
-              <div className="portrait col-lg-3">
-                <img
-                  className="rond "
-                  src={element.host.picture}
-                  alt="portrait"
-                />
-              </div>
+          <div className="portrait col-lg-3 col-md-12 col-sm-12">
+            <div className="name col-lg-12 col-md-12 col-sm-12">
+              <span className="identity">{element.host.name}</span>
+              <img
+                className="rond "
+                src={element.host.picture}
+                alt="portrait"
+              />
             </div>
-            <div className="star-rating">
+            <div className="star-rating col-12">
               <StarRating element={element} />
             </div>
           </div>

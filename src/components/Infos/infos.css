@@ -16,3 +16,34 @@ button.infos {
   height: auto;
   font-size: 24px;
 }
+
+@media (max-width: 820px) {
+  button.infos {
+    width: 335px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  .collapse.infos {
+    width: 335px;
+    height: auto;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  .carret img {
+    width: 15px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  button.infos {
+    width: 280px;
+  }
+
+  .collapse.infos {
+    width: 280px;
+  }
+}
