@@ -5,7 +5,7 @@ import './navigation.css';
 const Navigation = () => {
   return (
     <div className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
+      <div className="container-fluid">
         <ul className="navbar-nav ms-auto">
           <NavLink
             to="/"

@@ -13,7 +13,7 @@
 @media (max-width: 912px) {
   .habitations {
     background-color: #ffffff;
-    padding: 0.5rem;
+    padding: 1rem;
     justify-content: space-around;
     border-radius: 10px;
   }

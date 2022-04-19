@@ -4,7 +4,12 @@ body {
   color: #ff6060;
 }
 
-.container,
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .container-fluid {
   max-width: 1240px;
   margin: 0 auto;
