@@ -1,5 +1,6 @@
 import React from 'react';
 import './starRating.css';
+
 const StarRating = ({ element }) => {
   const note = element.rating;
   const activeStars = parseInt(note, 10);
